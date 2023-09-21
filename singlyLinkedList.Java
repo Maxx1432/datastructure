@@ -108,6 +108,110 @@ public class singlyLinkedList {
 			previous.next = current.next;
 		}
 	}
+	public boolean find(ListNode head, int searchKey) {
+		if(head == null)
+			return false;
+		ListNode current = head;
+		while(current != null) {
+			if(current.data == searchKey)
+				return true;
+			
+			current = current.next;
+		}
+		
+		return false;
+	}
+	
+	public ListNode reverseList() {
+		ListNode current = head;
+		ListNode previous = null;
+		ListNode next = null;
+		
+		while(current != null)
+		{
+			next = current.next;
+			current.next = previous;
+			previous = current;
+			current = next;
+		}
+		
+		return previous;
+	}
+	
+	public ListNode findMiddle(ListNode head) {
+		if(head == null)
+			return null;
+		
+		ListNode slowPtr = head;
+		ListNode fastPtr = head;
+		
+		while(fastPtr != null && fastPtr.next != null) {
+			slowPtr = slowPtr.next;
+			fastPtr = fastPtr.next.next;
+		}
+		
+		return slowPtr;
+	}
+	
+	public ListNode findNthPos(ListNode head, int n)
+	{
+		if(head == null)
+			return null;
+		else if(n <= 0) {
+			throw new IllegalArgumentException("Invalid Value: n = "+n);
+		}
+		
+		ListNode mainPtr = head;
+		ListNode refPtr = head;
+		int count = 0;
+		
+		while(count < n) {
+			if(refPtr == null) {
+				throw new IllegalArgumentException(n+" is greater than the no. of nodes in list");
+			}
+			refPtr = refPtr.next;
+			count++;
+		}
+		
+		while(refPtr != null)
+		{
+			refPtr = refPtr.next;
+			mainPtr = mainPtr.next;
+		}
+		
+		return mainPtr;
+	}
+	
+	public void removeDuplicate() {
+		ListNode current = head;
+		while(current != null && current.next != null) {
+			if(current.data == current.next.data) {
+				current.next = current.next.next;
+			} else {
+				current = current.next;
+			}
+		}
+	}
+	
+	public ListNode insertInSortedList(int data) {
+		ListNode newNode = new ListNode(data);
+		
+		if(head == null)
+			return newNode;
+		
+		ListNode current = head;
+		ListNode temp = null;
+		
+		while(current != null && current.data < newNode.data) {
+			temp = current;
+			current = current.next;
+		}
+		
+		newNode.next = current;
+		temp.next = newNode;
+		
+		return head;
+	}
 	
 	public static void main(String[] args) {
 		
@@ -160,6 +264,50 @@ public class singlyLinkedList {
 		sll.deleteMiddle(3);
 		
 		sll.display();
+
+		sll.display(sll.head);
+		System.out.println();
+		
+//		if(sll.find(sll.head, 12)) {
+//			System.out.println("Key Found");
+//		} else {
+//			System.out.println("key Not Found");
+//		}
+		
+//		ListNode reverse = sll.reverseList();
+//		
+//		sll.display(reverse);
+//		System.out.println();
+		
+//		System.out.println("Middle Element is :- "+sll.findMiddle(sll.head).data);
+//		
+//		to find the nth node from the end of singly Linked List
+//		
+//		System.out.println("nth node from the end is :- "+sll.findNthPos(sll.head,3).data);
+		
+		sll.insertFirst(10);
+		sll.display(sll.head);
+		System.out.println();
+		
+//		Remove duplicate in sorted Singly Linked List
+		sll.removeDuplicate();
+		sll.display(sll.head);
+		System.out.println();
+		
+		singlyLinkedList sllSorted = new singlyLinkedList();
+		sllSorted.insertFirst(16);
+		sllSorted.insertFirst(10);
+		sllSorted.insertFirst(8);
+		sllSorted.insertFirst(1);
+		
+		
+		sllSorted.display(sllSorted.head);
+		System.out.println();
+		
+		sllSorted.insertInSortedList(11);
+		
+		sllSorted.display(sllSorted.head);
+		System.out.println();
 		
 	}
 
