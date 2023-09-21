@@ -108,6 +108,7 @@ public class singlyLinkedList {
 			previous.next = current.next;
 		}
 	}
+//Find the element/data in the Singly Linked List
 	public boolean find(ListNode head, int searchKey) {
 		if(head == null)
 			return false;
@@ -121,7 +122,7 @@ public class singlyLinkedList {
 		
 		return false;
 	}
-	
+// Reverse the singly linked list
 	public ListNode reverseList() {
 		ListNode current = head;
 		ListNode previous = null;
@@ -137,7 +138,7 @@ public class singlyLinkedList {
 		
 		return previous;
 	}
-	
+// Find the middle element in the singly linked list
 	public ListNode findMiddle(ListNode head) {
 		if(head == null)
 			return null;
@@ -152,7 +153,7 @@ public class singlyLinkedList {
 		
 		return slowPtr;
 	}
-	
+// Find the nth node from the end of the singly Linked list
 	public ListNode findNthPos(ListNode head, int n)
 	{
 		if(head == null)
@@ -181,7 +182,7 @@ public class singlyLinkedList {
 		
 		return mainPtr;
 	}
-	
+// Remove the duplicate elemnt from the sorted Singly linked list
 	public void removeDuplicate() {
 		ListNode current = head;
 		while(current != null && current.next != null) {
@@ -192,7 +193,7 @@ public class singlyLinkedList {
 			}
 		}
 	}
-	
+// Insert in the sorted linked list
 	public ListNode insertInSortedList(int data) {
 		ListNode newNode = new ListNode(data);
 		
