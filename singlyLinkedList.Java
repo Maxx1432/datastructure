@@ -238,7 +238,22 @@ public class singlyLinkedList {
 		return;
 		
 	}
-	
+
+// Check if linked List contain a Loop or not
+public boolean containsLoop() {
+		ListNode fstPtr = head;
+		ListNode slwPtr = head;
+		
+		while(fstPtr != null && fstPtr.next != null) {
+			fstPtr= fstPtr.next.next;
+			slwPtr = slwPtr.next;
+			
+			if(fstPtr == slwPtr)
+				return true;
+		}
+		
+		return false;
+	}
 	
 	public static void main(String[] args) {
 		
