@@ -213,6 +213,32 @@ public class singlyLinkedList {
 		
 		return head;
 	}
+//	Remove a node by given key
+	public void deleteNodeBykey(int key) {
+		ListNode current = head;
+		ListNode temp = null;
+		
+		if(current != null && current.data == key ) {
+			head = current.next;
+			return;
+		}
+		
+		while(current != null && current.data != key)
+		{
+			temp = current;
+			current = current.next;
+		}
+		
+		if(current == null)
+		{
+			return;
+		}
+		
+		temp.next = current.next;
+		return;
+		
+	}
+	
 	
 	public static void main(String[] args) {
 		
@@ -307,6 +333,10 @@ public class singlyLinkedList {
 		
 		sllSorted.insertInSortedList(11);
 		
+		sllSorted.display(sllSorted.head);
+		System.out.println();
+
+		sllSorted.deleteNodeBykey(11);
 		sllSorted.display(sllSorted.head);
 		System.out.println();
 		
