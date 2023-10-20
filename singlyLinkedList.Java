@@ -303,6 +303,30 @@ private void removeLoop() {
         return;
     }
 
+// Merge two sorted linked list
+public static ListNode merge(ListNode a, ListNode b) {
+        ListNode dummy = new ListNode(0);
+        ListNode tail = dummy;
+
+        while(a != null && b!= null) {
+            if(a.data <= b.data) {
+                tail.next = a;
+                a = a.next;
+            } else {
+                tail.next = b;
+                b = b.next;
+            }
+            tail = tail.next;
+        }
+        if(a == null) {
+            tail.next = b;
+        } else {
+            tail.next = a;
+        }
+
+        return dummy.next;
+    }
+
 // Create a loop in Singly Linked List
 public void createALoopInLinkedList() {
         ListNode first = new ListNode(1);
@@ -429,6 +453,27 @@ public static void main(String[] args) {
         	System.out.println(sll.startingNodeOfLoop().data);
         	sll.removeLoop();
         	sll.display();
+
+		// Creating sorted linked list
+		SinglyLinkedLits sortedListA = new SinglyLinkedLits();
+        	sortedListA.insertLast(2);
+        	sortedListA.insertLast(4);
+        	sortedListA.insertLast(6);
+
+	        // Creating sorted linked list
+		SinglyLinkedLits sortedListB = new SinglyLinkedLits();
+        	sortedListB.insertLast(1);
+        	sortedListB.insertLast(3);
+        	sortedListB.insertLast(5);
+        	sortedListB.insertLast(8);
+
+        	SinglyLinkedLits sortedMergeList = new SinglyLinkedLits();
+
+        	//Using merge function with return a head and assigning to other list head
+		sortedMergeList.head = merge(sortedListA.head,sortedListB.head);
+        	System.out.println();
+
+        	sortedMergeList.display();
 		
 	}
 
