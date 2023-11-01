@@ -90,6 +90,24 @@ public class DoublyLinkedList {
         System.out.println("null");
     }
 
+    // Delete the First node in DLL
+    public ListNode deleteFirst(){
+        if(isEmpty()){
+            throw new NoSuchElementException();
+        }
+
+        ListNode temp = head;
+        if(head == tail){
+            tail = null;
+        } else {
+            head.next.previous = null;
+        }
+
+        head = head.next;
+        temp.next = null;
+        return temp;
+    }
+
     public static void main(String [] args) {
         DoublyLinkedList dll = new DoublyLinkedList();
         dll.insertLast(1);
@@ -98,7 +116,9 @@ public class DoublyLinkedList {
         dll.insertLast(25);
 
         dll.displayForward();
-
         dll.displayBackward();
+
+        System.out.println(dll.deleteFirst().data);
+        dll.displayForward();
     }
 }
