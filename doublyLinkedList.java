@@ -105,6 +105,7 @@ public class DoublyLinkedList {
 
         head = head.next;
         temp.next = null;
+        length--;
         return temp;
     }
 
