@@ -109,6 +109,23 @@ public class DoublyLinkedList {
         return temp;
     }
 
+    // To remove the Last Element from Doubly Linked List
+    public ListNode deleteLast(){
+        if(isEmpty()){
+            throw new NoSuchElementException();
+        }
+        ListNode temp = tail;
+        if(tail == head){
+            head = null;
+        } else {
+            tail.previous.next = null;
+        }
+        tail = tail.previous;
+        temp.previous=null;
+        length--;
+        return temp;
+    }
+
     public static void main(String [] args) {
         DoublyLinkedList dll = new DoublyLinkedList();
         dll.insertLast(1);
@@ -120,6 +137,9 @@ public class DoublyLinkedList {
         dll.displayBackward();
 
         System.out.println(dll.deleteFirst().data);
+        dll.displayForward();
+
+        System.out.println(dll.deleteLast().data);
         dll.displayForward();
     }
 }
