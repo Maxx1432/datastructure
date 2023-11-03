@@ -35,6 +35,19 @@ public class CircularLinkedList {
         return length == 0;
     }
 
+  // To Display the Circular Linked List
+  public void display(){
+        if(last == null){
+            return;
+        }
+        ListNode first = last.next;
+        while(first != last) {
+            System.out.print(first.data+"-->");
+            first = first.next;
+        }
+        System.out.print(first.data+" ");
+    }
+
     // Create node and connect them to make a Circular linked list
     // assign the last
     public void createCircularLinkedList(){
@@ -57,5 +70,7 @@ public class CircularLinkedList {
 
         CircularLinkedList cll = new CircularLinkedList();
         cll.createCircularLinkedList();
+
+        cll.display();
     }
 }
