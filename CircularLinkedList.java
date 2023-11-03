@@ -48,6 +48,20 @@ public class CircularLinkedList {
         length++;
     }
 
+  // insert Node at the end of the Circular Linked List
+  public void insertLast(int data) {
+        ListNode temp = new ListNode(data);
+        if(last == null) {
+            last = temp;
+            last.next = temp;
+        } else {
+            temp.next = last.next;
+            last.next = temp;
+            last = temp;
+        }
+        length++;
+    }
+
   // To Display the Circular Linked List
   public void display(){
         if(last == null){
@@ -88,6 +102,8 @@ public class CircularLinkedList {
         cll.insertFirst(100);
         cll.insertFirst(10);
         cll.insertFirst(1);
+
+        cll.insertLast(10000);
 
         cll.display();
     }
