@@ -35,6 +35,19 @@ public class CircularLinkedList {
         return length == 0;
     }
 
+  // To insert Node at starting of List
+      public void insertFirst(int data) {
+        ListNode temp = new ListNode(data);
+        if(last == null)
+        {
+            last = temp;
+        } else {
+            temp.next = last.next;
+        }
+        last.next = temp;
+        length++;
+    }
+
   // To Display the Circular Linked List
   public void display(){
         if(last == null){
@@ -69,7 +82,12 @@ public class CircularLinkedList {
     public static void main(String [] args){
 
         CircularLinkedList cll = new CircularLinkedList();
-        cll.createCircularLinkedList();
+        // cll.createCircularLinkedList();
+
+        cll.insertFirst(1000);
+        cll.insertFirst(100);
+        cll.insertFirst(10);
+        cll.insertFirst(1);
 
         cll.display();
     }
