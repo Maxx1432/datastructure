@@ -63,7 +63,7 @@ public class CircularLinkedList {
     }
 
   // Remove the first Node from circular linked list
-  public ListNode removeFirst(){
+  public int removeFirst(){
         if(isEmpty()){
             throw new NoSuchElementException();
         }
@@ -75,7 +75,29 @@ public class CircularLinkedList {
         }
         temp.next = null;
         length --;
-        return temp;
+        return temp.data;
+    }
+
+  // To remove the last Node from the Circular Linked List
+  public int removeLast(){
+        if(isEmpty()){
+            throw new NoSuchElementException();
+        }
+        ListNode temp = last.next;
+        if(temp == last){
+            last = null;
+            length--;
+            return temp.data;
+        }
+        while(temp.next != last){
+            temp = temp.next;
+        }
+        last = temp;
+        temp = last.next;
+        last.next = temp.next;
+        temp.next = null;
+        length --;
+        return temp.data;
     }
 
   // To Display the Circular Linked List
@@ -122,7 +144,12 @@ public class CircularLinkedList {
         cll.insertLast(10000);
         cll.display();
 
-        System.out.println(cll.removeFirst().data);
+        System.out.println(cll.removeFirst());
         cll.display();
+
+        System.out.println(cll.removeLast());
+        cll.display();
+
+      
     }
 }
