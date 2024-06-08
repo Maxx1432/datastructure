@@ -1,4 +1,6 @@
-/* 
+import java.util.NoSuchElementException;
+
+/*
     null <-- [previous|data|next] <--> [previous|data|next] <--> [previous|data|next] <--> [previous|data|next] --> null
                           ^                                                                           ^
                          Head                                                                        Tail

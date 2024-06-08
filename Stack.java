@@ -1,3 +1,5 @@
+import java.util.EmptyStackException;
+
 public class Stack {
   
     private ListNode top;

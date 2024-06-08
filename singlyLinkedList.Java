@@ -1,4 +1,4 @@
-public class singlyLinkedList {
+class singlyLinkedList {
 
 	//Creating the Head Node
 	private ListNode head;
@@ -18,6 +18,15 @@ public class singlyLinkedList {
 	public void display() {
 		ListNode current  = head;
 		
+		while(current != null) {
+			System.out.print(current.data + " --> ");
+			current = current.next;
+		}
+		System.out.print("null");
+	}
+
+	private void display(ListNode head) {
+		ListNode current  = head;
 		while(current != null) {
 			System.out.print(current.data + " --> ");
 			current = current.next;
@@ -449,25 +458,25 @@ public static void main(String[] args) {
 		System.out.println();
 
 		sll.createALoopInLinkedList();
-        	System.out.println(sll.cotainsLoop());
+        	System.out.println(sll.containsLoop());
         	System.out.println(sll.startingNodeOfLoop().data);
         	sll.removeLoop();
         	sll.display();
 
 		// Creating sorted linked list
-		SinglyLinkedLits sortedListA = new SinglyLinkedLits();
+		singlyLinkedList sortedListA = new singlyLinkedList();
         	sortedListA.insertLast(2);
         	sortedListA.insertLast(4);
         	sortedListA.insertLast(6);
 
 	        // Creating sorted linked list
-		SinglyLinkedLits sortedListB = new SinglyLinkedLits();
+		singlyLinkedList sortedListB = new singlyLinkedList();
         	sortedListB.insertLast(1);
         	sortedListB.insertLast(3);
         	sortedListB.insertLast(5);
         	sortedListB.insertLast(8);
 
-        	SinglyLinkedLits sortedMergeList = new SinglyLinkedLits();
+		singlyLinkedList sortedMergeList = new singlyLinkedList();
 
         	//Using merge function with return a head and assigning to other list head
 		sortedMergeList.head = merge(sortedListA.head,sortedListB.head);
@@ -476,5 +485,6 @@ public static void main(String[] args) {
         	sortedMergeList.display();
 		
 	}
+
 
 }
