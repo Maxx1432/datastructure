@@ -1,3 +1,4 @@
+import java.util.NoSuchElementException;
 
 /*
     [data|next] ---> [data|next] ---> [data|next] ---> [data|next] ---> null
@@ -49,7 +50,7 @@ public class Queue {
         return length == 0;
     }
 
-//    Create a method to insert element in te queue
+//    Create a method to insert element in the queue
     public void enQueue(int data){
         ListNode temp = new ListNode(data);
         if(isEmpty()){
@@ -59,6 +60,20 @@ public class Queue {
         }
         rear = temp;
         length++;
+    }
+
+//    create a method to delete the element from front of queue
+    public int deQueue(){
+        if(isEmpty()){
+            throw new NoSuchElementException("queue is empty");
+        }
+        int result = front.data;
+        front = front.next;
+        if(front == null){
+            rear = null;
+        }
+        length--;
+        return result;
     }
 
 //    Method to print the queue;
@@ -78,6 +93,15 @@ public class Queue {
         Queue queue = new Queue();
         queue.enQueue(10);
         queue.enQueue(20);
+
+        queue.print();
+
+        System.out.println("Element removed->"+queue.deQueue());
+        queue.print();
+        System.out.println("Element removed->"+queue.deQueue());
+        queue.print();
+        System.out.println("Element removed->"+queue.deQueue());
+
 
         queue.print();
     }
