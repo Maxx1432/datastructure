@@ -76,6 +76,22 @@ public class Queue {
         return result;
     }
 
+//    return the first element in the queue
+    public int first(){
+        if(isEmpty()){
+            throw new NoSuchElementException("queue is empty");
+        }
+        return front.data;
+    }
+
+//    return the last element in the queue
+    public int last() {
+        if (isEmpty()) {
+            throw new NoSuchElementException("queue is empty");
+        }
+        return rear.data;
+    }
+
 //    Method to print the queue;
     public void print(){
         if(isEmpty()){
@@ -92,9 +108,14 @@ public class Queue {
 
         Queue queue = new Queue();
         queue.enQueue(10);
+        queue.enQueue(15);
         queue.enQueue(20);
 
         queue.print();
+
+        System.out.println("First Element->"+queue.first());
+        System.out.println("First Element->"+queue.last());
+
 
         System.out.println("Element removed->"+queue.deQueue());
         queue.print();
