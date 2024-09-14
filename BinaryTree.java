@@ -36,7 +36,7 @@ public class BinaryTree {
     public void preOrder(TreeNode root){
         if(root == null) //base case
             return;
-        System.out.println(root.data + " ");
+        System.out.print(root.data + " ");
         preOrder(root.left);
         preOrder(root.right);
     }
@@ -56,15 +56,28 @@ public class BinaryTree {
                 stack.push(temp.left);
             }
         }
-
+    }
+    public void postOrder(TreeNode root){
+        if (root == null)
+            return;
+        postOrder(root.left);
+        System.out.print(root.data+"-->");
+        postOrder(root.right);
     }
 
     public static void main(String[] args) {
         BinaryTree bt = new BinaryTree();
         bt.createBinaryTree();
+        System.out.println("Pre order");
         bt.preOrder(bt.root);
+        System.out.println();
 
         System.out.println("using Iterative");
         bt.preOrderIterative(bt.root);
+        System.out.println();
+
+        System.out.println("Post Order");
+        bt.postOrder(bt.root);
+        System.out.println();
     }
 }
