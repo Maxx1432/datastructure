@@ -57,12 +57,12 @@ public class BinaryTree {
             }
         }
     }
-    public void postOrder(TreeNode root){
+    public void inOrder(TreeNode root){
         if (root == null)
             return;
-        postOrder(root.left);
+        inOrder(root.left);
         System.out.print(root.data+"-->");
-        postOrder(root.right);
+        inOrder(root.right);
     }
 
     public static void main(String[] args) {
@@ -76,8 +76,8 @@ public class BinaryTree {
         bt.preOrderIterative(bt.root);
         System.out.println();
 
-        System.out.println("Post Order");
-        bt.postOrder(bt.root);
+        System.out.println("in Order");
+        bt.inOrder(bt.root);
         System.out.println();
     }
 }
