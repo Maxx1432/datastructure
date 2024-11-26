@@ -5,3 +5,4 @@ best-time-to-buy-and-sell-stock-ii :- https://leetcode.com/problems/best-time-to
 rotate-array :- https://leetcode.com/problems/rotate-array/description/
 contains-duplicate :- https://leetcode.com/problems/contains-duplicate/description/
 single-number :- https://leetcode.com/problems/single-number/description/
+intersection-of-two-arrays-ii :- https://leetcode.com/problems/intersection-of-two-arrays-ii/description/
