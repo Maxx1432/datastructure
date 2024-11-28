@@ -11,3 +11,6 @@ plus-one :- https://leetcode.com/problems/plus-one/description/
 
 String
 reverse-string :- https://leetcode.com/problems/reverse-string/description/
+
+Linked List
+delete-node-in-a-linked-list(Remove Node) :- https://leetcode.com/problems/delete-node-in-a-linked-list/description/
