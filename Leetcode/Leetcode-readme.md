@@ -14,6 +14,7 @@ reverse-string :- https://leetcode.com/problems/reverse-string/description/
 reverse-integer :- https://leetcode.com/problems/reverse-integer/description/
 first-unique-character-in-a-string :- https://leetcode.com/problems/first-unique-character-in-a-string/
 valid-anagram :- https://leetcode.com/problems/valid-anagram/description/
+valid-palindrome :- https://leetcode.com/problems/valid-palindrome/description/
 
 Linked List
 delete-node-in-a-linked-list(Remove Node) :- https://leetcode.com/problems/delete-node-in-a-linked-list/description/
