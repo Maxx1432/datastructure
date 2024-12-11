@@ -9,6 +9,7 @@ single-number :- https://leetcode.com/problems/single-number/description/
 intersection-of-two-arrays-ii :- https://leetcode.com/problems/intersection-of-two-arrays-ii/description/
 plus-one :- https://leetcode.com/problems/plus-one/description/
 move-zeroes :- https://leetcode.com/problems/move-zeroes/description/
+two-sum :- https://leetcode.com/problems/two-sum/description/
 
 String
 reverse-string :- https://leetcode.com/problems/reverse-string/description/
