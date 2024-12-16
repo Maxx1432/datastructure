@@ -10,6 +10,7 @@ intersection-of-two-arrays-ii :- https://leetcode.com/problems/intersection-of-t
 plus-one :- https://leetcode.com/problems/plus-one/description/
 move-zeroes :- https://leetcode.com/problems/move-zeroes/description/
 two-sum :- https://leetcode.com/problems/two-sum/description/
+valid-sudoku :- https://leetcode.com/problems/valid-sudoku/description/
 
 String
 reverse-string :- https://leetcode.com/problems/reverse-string/description/
