@@ -4,6 +4,13 @@ public class RotateImage {
 
     public static void rotate(int[][] matrix) {
 
+        //first we transpose the matrix
+        /*
+        [1 2 3]        [1 4 7]
+        [4 5 6]   <==> [2 5 8]
+        [7 8 9]        [3 6 9]
+         */
+
         for(int i = 0; i < matrix.length; i++){
             for(int j = 0; j < i; j++){
                 int temp = matrix[i][j];
@@ -11,6 +18,13 @@ public class RotateImage {
                 matrix[j][i] = temp;
             }
         }
+
+        //after the transpose we rotate the rows
+        /*
+        [1 4 7]      [7 4 1]
+        [2 5 8] <==> [8 5 2]
+        [3 6 9]      [9 6 3]
+         */
 
         for(int i = 0; i < matrix.length; i++){
             for(int j = 0; j < matrix[0].length / 2; j++){
