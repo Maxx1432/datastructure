@@ -12,6 +12,7 @@ move-zeroes :- https://leetcode.com/problems/move-zeroes/description/
 two-sum :- https://leetcode.com/problems/two-sum/description/
 valid-sudoku :- https://leetcode.com/problems/valid-sudoku/description/
 rotate-image :- https://leetcode.com/problems/rotate-image/description/
+3sum :- https://leetcode.com/problems/3sum/description/
 
 String
 reverse-string :- https://leetcode.com/problems/reverse-string/description/
