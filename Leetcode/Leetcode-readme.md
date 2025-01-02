@@ -13,6 +13,7 @@ two-sum :- https://leetcode.com/problems/two-sum/description/
 valid-sudoku :- https://leetcode.com/problems/valid-sudoku/description/
 rotate-image :- https://leetcode.com/problems/rotate-image/description/
 3sum :- https://leetcode.com/problems/3sum/description/
+set-matrix-zeroes :- https://leetcode.com/problems/set-matrix-zeroes/description/
 
 String
 reverse-string :- https://leetcode.com/problems/reverse-string/description/
