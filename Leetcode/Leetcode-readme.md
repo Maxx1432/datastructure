@@ -15,6 +15,7 @@ rotate-image :- https://leetcode.com/problems/rotate-image/description/
 3sum :- https://leetcode.com/problems/3sum/description/
 set-matrix-zeroes :- https://leetcode.com/problems/set-matrix-zeroes/description/
 set-mismatch :- https://leetcode.com/problems/set-mismatch/description/
+group-anagrams :- https://leetcode.com/problems/group-anagrams/description/
 
 String
 reverse-string :- https://leetcode.com/problems/reverse-string/description/
