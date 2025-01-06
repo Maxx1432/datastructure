@@ -30,5 +30,8 @@ delete-the-middle-node-of-a-linked-list :- https://leetcode.com/problems/delete-
 remove-nth-node-from-end-of-list :- https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 reverse-linked-list :- https://leetcode.com/problems/reverse-linked-list/
 
+Trees
+binary-tree-preorder-traversal :- https://leetcode.com/problems/binary-tree-preorder-traversal/
+
 Bonus
 MovesZeroesToFront :- 
