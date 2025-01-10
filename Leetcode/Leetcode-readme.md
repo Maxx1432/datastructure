@@ -36,4 +36,7 @@ binary-tree-inorder-traversal :- https://leetcode.com/problems/binary-tree-inord
 binary-tree-postorder-traversal :- https://leetcode.com/problems/binary-tree-postorder-traversal/
 
 Bonus
-MovesZeroesToFront :- 
+MovesZeroesToFront :-
+
+Binary Search
+find-smallest-letter-greater-than-target :- https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/
