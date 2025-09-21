@@ -27,6 +27,7 @@ valid-palindrome :- https://leetcode.com/problems/valid-palindrome/description/
 String-to-integer-atoi :- https://leetcode.com/problems/string-to-integer-atoi/description/
 implement-strStr :- https://leetcode.com/problems/implement-strstr/description/
 longest-common-prefix :- https://leetcode.com/problems/longest-common-prefix/description/
+longest-substring-without-repeating-characters :- https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
 
 Linked List
 delete-node-in-a-linked-list(Remove Node) :- https://leetcode.com/problems/delete-node-in-a-linked-list/description/
