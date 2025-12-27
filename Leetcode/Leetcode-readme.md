@@ -35,6 +35,7 @@ delete-the-middle-node-of-a-linked-list :- https://leetcode.com/problems/delete-
 remove-nth-node-from-end-of-list :- https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 reverse-linked-list :- https://leetcode.com/problems/reverse-linked-list/
 merge-k-sorted-lists :- https://leetcode.com/problems/merge-k-sorted-lists/
+palindrome-linked-lis :- https://leetcode.com/problems/palindrome-linked-list/
 
 Trees
 binary-tree-preorder-traversal :- https://leetcode.com/problems/binary-tree-preorder-traversal/
