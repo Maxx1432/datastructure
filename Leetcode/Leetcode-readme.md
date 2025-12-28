@@ -41,15 +41,17 @@ A comprehensive collection of solved LeetCode problems organized by data structu
 
 ### 🔗 Linked List Problems (7 Problems)
 
-| Problem | LeetCode Link | Difficulty |
-|---------|---------------|------------|
-| Delete Node in a Linked List | [View Problem](https://leetcode.com/problems/delete-node-in-a-linked-list/description/) | Medium |
-| Delete the Middle Node of a Linked List | [View Problem](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/description/) | Medium |
-| Remove Nth Node From End of List | [View Problem](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium |
-| Reverse Linked List | [View Problem](https://leetcode.com/problems/reverse-linked-list/) | Easy |
-| Merge k Sorted Lists | [View Problem](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard |
-| Palindrome Linked List | [View Problem](https://leetcode.com/problems/palindrome-linked-list/) | Easy |
-| Linked List Cycle | [View Problem](https://leetcode.com/problems/linked-list-cycle/) | Easy |
+| Problem                                 | LeetCode Link                                                                                      | Difficulty |
+|-----------------------------------------|----------------------------------------------------------------------------------------------------|------------|
+| Delete Node in a Linked List            | [View Problem](https://leetcode.com/problems/delete-node-in-a-linked-list/description/)            | Medium     |
+| Delete the Middle Node of a Linked List | [View Problem](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/description/) | Medium     |
+| Remove Nth Node From End of List        | [View Problem](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)                    | Medium     |
+| Reverse Linked List                     | [View Problem](https://leetcode.com/problems/reverse-linked-list/)                                 | Easy       |
+| Merge k Sorted Lists                    | [View Problem](https://leetcode.com/problems/merge-k-sorted-lists/)                                | Hard       |
+| Palindrome Linked List                  | [View Problem](https://leetcode.com/problems/palindrome-linked-list/)                              | Easy       |
+| Linked List Cycle                       | [View Problem](https://leetcode.com/problems/linked-list-cycle/)                                   | Easy       |
+| Linked List Cycle 2                     | [View Problem](https://leetcode.com/problems/linked-list-cycle-ii/)                                | Medium     |
+
 
 ### 🌳 Tree Problems (3 Problems)
 
