@@ -39,10 +39,11 @@ A comprehensive collection of solved LeetCode problems organized by data structu
 | Longest Common Prefix | [View Problem](https://leetcode.com/problems/longest-common-prefix/description/) | Easy |
 | Longest Substring Without Repeating Characters | [View Problem](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | Medium |
 
-### 🔗 Linked List Problems (7 Problems)
+### 🔗 Linked List Problems (8 Problems)
 
 | Problem                                 | LeetCode Link                                                                                      | Difficulty |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------|------------|
+| Design Linked List                      | [View Problem](https://leetcode.com/problems/design-linked-list/)                                 | Medium     |
 | Delete Node in a Linked List            | [View Problem](https://leetcode.com/problems/delete-node-in-a-linked-list/description/)            | Medium     |
 | Delete the Middle Node of a Linked List | [View Problem](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/description/) | Medium     |
 | Remove Nth Node From End of List        | [View Problem](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)                    | Medium     |
@@ -77,9 +78,9 @@ A comprehensive collection of solved LeetCode problems organized by data structu
 
 ## 📈 Progress Summary
 
-- **Total Problems Solved**: 36+
+- **Total Problems Solved**: 37+
 - **Easy**: ~19 problems
-- **Medium**: ~13 problems  
+- **Medium**: ~14 problems  
 - **Hard**: ~2 problems
 
 ## 🏗️ Data Structure Coverage
@@ -94,4 +95,4 @@ A comprehensive collection of solved LeetCode problems organized by data structu
 
 ---
 
-*Last Updated: December 27, 2024*
+*Last Updated: December 31, 2024*
