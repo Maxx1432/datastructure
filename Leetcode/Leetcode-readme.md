@@ -39,7 +39,7 @@ A comprehensive collection of solved LeetCode problems organized by data structu
 | Longest Common Prefix | [View Problem](https://leetcode.com/problems/longest-common-prefix/description/) | Easy |
 | Longest Substring Without Repeating Characters | [View Problem](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | Medium |
 
-### 🔗 Linked List Problems (8 Problems)
+### 🔗 Linked List Problems (9 Problems)
 
 | Problem                                 | LeetCode Link                                                                                      | Difficulty |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------|------------|
@@ -48,6 +48,7 @@ A comprehensive collection of solved LeetCode problems organized by data structu
 | Delete the Middle Node of a Linked List | [View Problem](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/description/) | Medium     |
 | Remove Nth Node From End of List        | [View Problem](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)                    | Medium     |
 | Reverse Linked List                     | [View Problem](https://leetcode.com/problems/reverse-linked-list/)                                 | Easy       |
+| Reverse Linked List II                  | [View Problem](https://leetcode.com/problems/reverse-linked-list-ii/)                              | Medium     |
 | Merge k Sorted Lists                    | [View Problem](https://leetcode.com/problems/merge-k-sorted-lists/)                                | Hard       |
 | Palindrome Linked List                  | [View Problem](https://leetcode.com/problems/palindrome-linked-list/)                              | Easy       |
 | Linked List Cycle                       | [View Problem](https://leetcode.com/problems/linked-list-cycle/)                                   | Easy       |
@@ -78,9 +79,9 @@ A comprehensive collection of solved LeetCode problems organized by data structu
 
 ## 📈 Progress Summary
 
-- **Total Problems Solved**: 37+
+- **Total Problems Solved**: 38+
 - **Easy**: ~19 problems
-- **Medium**: ~14 problems  
+- **Medium**: ~15 problems  
 - **Hard**: ~2 problems
 
 ## 🏗️ Data Structure Coverage
@@ -95,4 +96,4 @@ A comprehensive collection of solved LeetCode problems organized by data structu
 
 ---
 
-*Last Updated: December 31, 2024*
+*Last Updated: January 3, 2026*
