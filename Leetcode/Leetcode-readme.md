@@ -4,7 +4,7 @@ A comprehensive collection of solved LeetCode problems organized by data structu
 
 ## 📊 Problem Categories
 
-### 🟢 Array Problems (16 Problems)
+### 🟢 Array Problems (17 Problems)
 
 | Problem | LeetCode Link | Difficulty |
 |---------|---------------|------------|
@@ -24,6 +24,7 @@ A comprehensive collection of solved LeetCode problems organized by data structu
 | Set Mismatch | [View Problem](https://leetcode.com/problems/set-mismatch/description/) | Easy |
 | Group Anagrams | [View Problem](https://leetcode.com/problems/group-anagrams/description/) | Medium |
 | First Missing Positive | [View Problem](https://leetcode.com/problems/first-missing-positive/description/) | Hard |
+| Spiral Matrix | [View Problem](https://leetcode.com/problems/spiral-matrix/) | Medium |
 
 ### 🔤 String Problems (9 Problems)
 
@@ -79,9 +80,9 @@ A comprehensive collection of solved LeetCode problems organized by data structu
 
 ## 📈 Progress Summary
 
-- **Total Problems Solved**: 38+
+- **Total Problems Solved**: 39+
 - **Easy**: ~19 problems
-- **Medium**: ~15 problems  
+- **Medium**: ~16 problems  
 - **Hard**: ~2 problems
 
 ## 🏗️ Data Structure Coverage
@@ -96,4 +97,4 @@ A comprehensive collection of solved LeetCode problems organized by data structu
 
 ---
 
-*Last Updated: January 3, 2026*
+*Last Updated: May 2, 2026*
